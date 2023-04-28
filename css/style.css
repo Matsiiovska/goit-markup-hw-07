@@ -301,9 +301,9 @@ body {
     pointer-events: auto;
   }
 
-  .menu-mobile_item:not(:last-child) {
+  /*.menu-mobile_item:not(:last-child) {
     margin-right: 40px;
-  }
+  }*/
 
   .menu-mobile_item {
     position: relative;
@@ -755,7 +755,7 @@ body {
 .social-list-link:focus {
   background-color: var(--accent-color);
 }
-.social-list-icon {
+.social-list-iconfut {
   fill: var(--fill-text-color);
 }
 /*----------------------------мобілка----------------*/
@@ -770,7 +770,6 @@ body {
     letter-spacing: 0.02em;
   }
   .employees-ca {
-    margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -780,17 +779,13 @@ body {
     font-size: 30px;
 
   }
-
+  .employees-ca:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
 /*----------------------мобілка-----------------------*/
 /*---------------------------планшет-----------------*/
 @media screen and (min-width: 768px) {
-  /*.the-third-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-  }*/
   .ner {
     gap: 64px 24px;
   }
@@ -799,10 +794,7 @@ body {
 
 /*---------------------------комп-----------------*/
 @media screen and (min-width: 1200px) {
-  /*.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }*/
+
   .ner {
     flex-wrap: nowrap;
   }
@@ -856,13 +848,11 @@ body {
     flex-basis: calc((100% - 16px) / 2);
   }
 
-  .social-list-item {
-    width: 190px;
-  }
 }
 @media screen and (max-width: 427px) {
   .social-list-cost{
-    width: 170px;
+    width: 130px;
+    height: 70px;
   }
   .social-list-iccost{
     width: 104px;
@@ -1026,6 +1016,9 @@ body {
 .futer-container {
   display: flex;
 }
+.social-list-icon {
+  fill: var(--fill-text-color);
+}
 
 /*----------------------------мобілка----------------*/
 @media screen and (max-width: 767px) {
@@ -1034,12 +1027,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  .suptitle-theme-light {
-    margin-bottom: 72px;
+    gap: 72px;
   }
   .futerblok {
-    /* margin-bottom: 72px;*/
     max-width: 268px;
     margin-left: auto;
     margin-right: auto;
@@ -1063,20 +1053,18 @@ body {
   .the-third-titlefut {
     text-align: center;
   }
-  .social-list-icon {
-    width: 16px;
-    height: 16px;
-  }
+
   .social-list-item {
     gap: 0;
   }
-  .social-list-icon {
+  .social-list-iconfut {
     width: 24px;
     height: 24px;
   }
-
+  .social-list-linkfut:hover,
+.social-list-linkfut:focus {
+  background-color: var(--fut-hov-icon);
 }
-@media screen and (max-width: 427px) {
 
 }
 /*----------------------/мобілка-----------------------*/
@@ -1147,9 +1135,6 @@ body {
     margin-right: 120px;
   }
 
-  /*.truadiv{
-  margin-left: auto;
-}*/
 }
 /*---------------------------/комп-----------------*/
 
