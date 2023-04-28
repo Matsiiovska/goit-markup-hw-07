@@ -718,9 +718,9 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   width: 264px;
 }
-.employees-ca:not(:last-child) {
+/*.employees-ca:not(:last-child) {
   margin-bottom: 72px;
-}
+}*/
 .employees-card-content-wraper {
   border: 1px solid var(--cont-col);
   border-top: none;
@@ -774,18 +774,21 @@ body {
     letter-spacing: 0.02em;
     margin-bottom: 8px;
   }
-/*.employees-ca {
+.employees-ca {
     margin-left: auto;
     margin-right: auto;
-  }*/
-  .employees-ca:not(:last-child) {
-    margin-bottom: 72px;
   }
+  /*.employees-ca:not(:last-child) {
+    margin-bottom: 72px;
+  }*/
 
 }
 @media screen and (max-width: 427px) {
   .suptitle {
     font-size: 30px;
+  }
+  .ner {
+    gap: 72px;
   }
 
 }
